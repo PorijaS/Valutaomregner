@@ -140,19 +140,9 @@ namespace Valutaomregner
 
 		private void clear_btn_Click(object sender, EventArgs e)
 		{
-			ClearControls();
+
 		}
 
-		private void ClearControls()
-		{
-			amount_text.Text = string.Empty;
-			if (comboBox1.Items.Count > 0)
-				comboBox1.SelectedIndex = 0;
-			if (comboBox2.Items.Count > 0)
-				comboBox2.SelectedIndex = 0;
-			display_txt.Text = "";
-			amount_text.Focus();
-		}
 
 		private void display_txt_Click(object sender, EventArgs e)
 		{
