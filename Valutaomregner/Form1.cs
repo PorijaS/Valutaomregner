@@ -105,6 +105,11 @@ namespace Valutaomregner
 
 		public void conv_btn_Click(object sender, EventArgs e)
 		{
+			ConvertControls();
+		}
+
+		private void ConvertControls()
+		{
 			double ConvertedValue;
 
 			if (amount_text.Text == null || amount_text.Text.Trim() == "")
@@ -141,6 +146,7 @@ namespace Valutaomregner
 		private void clear_btn_Click(object sender, EventArgs e)
 		{
 			ClearControls();
+			ConvertControls();
 		}
 
 		private void ClearControls()
