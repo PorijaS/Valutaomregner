@@ -37,6 +37,7 @@
 			this.display_txt = new System.Windows.Forms.Label();
 			this.conv_btn = new System.Windows.Forms.Button();
 			this.clear_btn = new System.Windows.Forms.Button();
+			this.SwitchBTN = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// comboBox1
@@ -122,6 +123,16 @@
 			this.clear_btn.UseVisualStyleBackColor = true;
 			this.clear_btn.Click += new System.EventHandler(this.clear_btn_Click);
 			// 
+			// SwitchBTN
+			// 
+			this.SwitchBTN.Location = new System.Drawing.Point(172, 169);
+			this.SwitchBTN.Name = "SwitchBTN";
+			this.SwitchBTN.Size = new System.Drawing.Size(75, 23);
+			this.SwitchBTN.TabIndex = 8;
+			this.SwitchBTN.Text = "Switch";
+			this.SwitchBTN.UseVisualStyleBackColor = true;
+			this.SwitchBTN.Click += new System.EventHandler(this.SwitchBTN_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -129,6 +140,7 @@
 			this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
 			this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
 			this.ClientSize = new System.Drawing.Size(426, 450);
+			this.Controls.Add(this.SwitchBTN);
 			this.Controls.Add(this.clear_btn);
 			this.Controls.Add(this.conv_btn);
 			this.Controls.Add(this.display_txt);
@@ -158,6 +170,7 @@
 		private System.Windows.Forms.Label display_txt;
 		private System.Windows.Forms.Button conv_btn;
 		private System.Windows.Forms.Button clear_btn;
+		private System.Windows.Forms.Button SwitchBTN;
 	}
 }
 

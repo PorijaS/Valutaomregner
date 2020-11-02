@@ -103,7 +103,7 @@ namespace Valutaomregner
 
 		}
 
-		private void conv_btn_Click(object sender, EventArgs e)
+		public void conv_btn_Click(object sender, EventArgs e)
 		{
 			double ConvertedValue;
 
@@ -157,6 +157,24 @@ namespace Valutaomregner
 		private void display_txt_Click(object sender, EventArgs e)
 		{
 
+		}
+
+		private void SwitchBTN_Click(object sender, EventArgs e)
+		{
+			SwitchControls();
+		}
+
+		private void SwitchControls()
+		{
+			int temp;
+
+			if (comboBox1.SelectedIndex > 0)
+			{
+
+				temp = comboBox1.SelectedIndex;
+				comboBox1.SelectedIndex = comboBox2.SelectedIndex;
+				comboBox2.SelectedIndex = temp;
+			}
 		}
 	}
 }	
